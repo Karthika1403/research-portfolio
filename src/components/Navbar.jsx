@@ -1,35 +1,54 @@
-<nav className="nav-links">
+import { Link, NavLink } from "react-router-dom";
+import "./Navbar.css";
 
-  <NavLink to="/">Home</NavLink>
+export default function Navbar() {
+  return (
+    <header className="navbar">
 
-  <div className="dropdown">
+      <div className="nav-container">
 
-    <span className="dropdown-title">
-      Research ▾
-    </span>
+        <Link to="/" className="logo">
+          <span className="logo-blue">Karthika's</span>
+          <span>Research</span>
+        </Link>
 
-    <div className="dropdown-menu">
+        <nav className="nav-links">
 
-      <Link to="/research/crmm-r">
-        CRMM-R
-      </Link>
+          <NavLink to="/">Home</NavLink>
 
-      <Link to="/research/project-2">
-        Machine Unlearning
-      </Link>
+          <div className="dropdown">
 
-    </div>
+            <span className="dropdown-title">
+              Research ▾
+            </span>
 
-  </div>
+            <div className="dropdown-menu">
 
-  <a
-  href="/Karthika's Resume.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <button className="secondary">
-    Resume
-  </button>
-</a>
+              <Link to="/research/crmm-r">
+                CRMM-R
+              </Link>
 
-</nav>
+              <Link to="/research/project-2">
+                Machine Unlearning
+              </Link>
+
+            </div>
+
+          </div>
+
+          <a
+            href="/Karthika_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="resume-link"
+          >
+            Resume
+          </a>
+
+        </nav>
+
+      </div>
+
+    </header>
+  );
+}
