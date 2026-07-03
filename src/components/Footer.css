@@ -1,0 +1,33 @@
+footer{
+
+    border-top:1px solid #E5E7EB;
+
+    margin-top:100px;
+
+    padding:60px 0;
+
+}
+
+footer h3{
+
+    font-size:28px;
+
+}
+
+footer p{
+
+    margin-top:15px;
+
+    color:#6B7280;
+
+}
+
+footer small{
+
+    display:block;
+
+    margin-top:25px;
+
+    color:#9CA3AF;
+
+}

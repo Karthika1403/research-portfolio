@@ -1,0 +1,445 @@
+/* ===========================
+   GOOGLE RESEARCH STYLE
+=========================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:"Inter",sans-serif;
+    color:#111827;
+    background:#ffffff;
+    line-height:1.7;
+
+}
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+.container{
+
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    padding:110px 0 80px;
+
+}
+
+.tag{
+
+    color:#2563EB;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:14px;
+    font-weight:600;
+
+}
+
+.hero h1{
+
+    font-size:72px;
+    margin-top:20px;
+    font-weight:700;
+    line-height:1.1;
+
+}
+
+.hero h2{
+
+    margin-top:20px;
+    color:#6B7280;
+    font-weight:500;
+    font-size:28px;
+
+}
+
+.description{
+
+max-width:850px;
+
+margin:40px auto;
+
+font-size:22px;
+
+line-height:1.9;
+
+color:#4B5563;
+
+text-align:center;
+
+}
+
+.buttons{
+
+    margin-top:45px;
+    display:flex;
+    gap:20px;
+
+}
+
+.primary{
+
+    background:#2563EB;
+    color:white;
+    border:none;
+    padding:16px 38px;
+    border-radius:10px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.primary:hover{
+
+    background:#1D4ED8;
+
+}
+
+.secondary{
+
+    background:white;
+    border:1px solid #D1D5DB;
+    padding:16px 38px;
+    border-radius:10px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.secondary:hover{
+
+    background:#F3F4F6;
+
+}
+.hero .container{
+
+max-width:1000px;
+
+margin:0 auto;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+}
+/* ===========================
+   PROJECTS
+=========================== */
+
+.projects{
+
+    padding:90px 0;
+    border-top:1px solid #E5E7EB;
+
+}
+
+.projects h2{
+
+    font-size:42px;
+    margin-bottom:50px;
+
+}
+
+.project-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+
+}
+
+.card{
+
+    border:1px solid #E5E7EB;
+    border-radius:18px;
+    padding:35px;
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.status{
+
+    display:inline-block;
+    background:#DCFCE7;
+    color:#15803D;
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:13px;
+    margin-bottom:25px;
+
+}
+
+.coming{
+
+    display:inline-block;
+    background:#F3F4F6;
+    color:#6B7280;
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:13px;
+    margin-bottom:25px;
+
+}
+
+.card h3{
+
+    font-size:32px;
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#6B7280;
+    font-size:18px;
+    line-height:1.8;
+
+}
+
+.metrics{
+
+    display:flex;
+    gap:60px;
+    margin:35px 0;
+
+}
+
+.metrics h4{
+
+    font-size:34px;
+    color:#111827;
+
+}
+
+.metrics span{
+
+    color:#6B7280;
+    font-size:15px;
+
+}
+
+.card a{
+
+    color:#2563EB;
+    font-weight:600;
+    font-size:18px;
+
+}
+
+.card a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about{
+
+padding:120px 20px;
+
+background:#F9FAFB;
+
+}
+
+.about .container{
+
+max-width:900px;
+
+margin:0 auto;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+text-align:center;
+
+}
+
+.about h2{
+
+font-size:56px;
+
+margin-bottom:40px;
+
+}
+
+.about p{
+
+max-width:850px;
+
+font-size:22px;
+
+line-height:2;
+
+color:#4B5563;
+
+margin:0 auto;
+
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact{
+
+    padding:90px 0;
+    border-top:1px solid #E5E7EB;
+
+}
+
+.contact h2{
+
+    font-size:42px;
+    margin-bottom:35px;
+
+}
+
+.contact p{
+
+    font-size:20px;
+    margin-bottom:12px;
+    color:#4B5563;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    border-top:1px solid #E5E7EB;
+    padding:45px 0;
+    text-align:center;
+    color:#6B7280;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:50px;
+
+}
+
+.hero h2{
+
+font-size:22px;
+
+}
+
+.description{
+
+width:100%;
+font-size:18px;
+
+}
+
+.project-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.about p{
+
+width:100%;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+}
+
+.primary,
+.secondary{
+
+width:220px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.hero{
+
+padding:70px 0;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.projects h2,
+.about h2,
+.contact h2{
+
+font-size:34px;
+
+}
+
+.card{
+
+padding:25px;
+
+}
+
+.metrics{
+
+flex-direction:column;
+gap:20px;
+
+}
+
+}
