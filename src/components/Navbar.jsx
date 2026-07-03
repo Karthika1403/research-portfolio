@@ -37,7 +37,7 @@ export default function Navbar() {
           </div>
 
           <a
-            href="/Karthika_Resume.pdf"
+            href="/Karthika_S_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="resume-link"
