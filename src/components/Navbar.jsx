@@ -1,48 +1,35 @@
-import { Link, NavLink } from "react-router-dom";
-import "./Navbar.css";
+<nav className="nav-links">
 
-export default function Navbar() {
-  return (
-    <header className="navbar">
+  <NavLink to="/">Home</NavLink>
 
-      <div className="nav-container">
+  <div className="dropdown">
 
-        <Link to="/" className="logo">
+    <span className="dropdown-title">
+      Research ▾
+    </span>
 
-          <span className="logo-blue">Karthika's</span>
+    <div className="dropdown-menu">
 
-          <span>Research</span>
+      <Link to="/research/crmm-r">
+        CRMM-R
+      </Link>
 
-        </Link>
+      <Link to="/research/project-2">
+        Machine Unlearning
+      </Link>
 
-        <nav>
-
-          <NavLink to="/">Home</NavLink>
-
-          <li className="dropdown">
-
-  <span>Research ▾</span>
-
-  <div className="dropdown-menu">
-
-    <Link to="/research/crmm-r">
-      CRMM-R
-    </Link>
-
-    <Link to="/research/project-2">
-      Machine Unlearning
-    </Link>
+    </div>
 
   </div>
 
-</li>
+  <a
+  href="/Karthika's Resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className="secondary">
+    Resume
+  </button>
+</a>
 
-          <NavLink to="/resume">Resume</NavLink>
-
-        </nav>
-
-      </div>
-
-    </header>
-  );
-}
+</nav>
