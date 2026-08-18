@@ -431,7 +431,7 @@ export default function CRMMR() {
     <div className="resource-grid">
 
       <a
-        href="/public/On-Device Multimodal Health Reasoning Under Resource Constraints Using CRMM-R_.pdf"
+        href="/On-Device Multimodal Health Reasoning Under Resource Constraints Using CRMM-R_.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="resource-card"
